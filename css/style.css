@@ -830,6 +830,7 @@ border-radius: 4px;
     height: 100%;
     padding: 40px;
     
+    
        
 }
 
@@ -858,13 +859,37 @@ border-radius: 4px;
 }
 
 .contact-form-input{
-    min-width: 448px;
+    width: 100%;
     height: 40px;
     padding-left: 42px;
-    font-size: 16px;
     margin-bottom: 28px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color var(--transition-time) var(--transition);
+}
+
+.contact-form-input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+
+
+.modal-form-input-wrapper{
+    display: block;
+    position: relative;
+}
+
+.contact-form-icon{
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 12px;
+    transition: fill var(--transition-time) var(--transition);
+    
+}
+.contact-form-input:focus +.contact-form-icon {
+    fill: var(--accent-color);
 }
 
 .contact-form-texarea{
@@ -875,11 +900,17 @@ border-radius: 4px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color var(--transition-time) var(--transition);
   
 
 }
 
-.textarea.placeholder{
+.contact-form-texarea:focus{
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.contact-form-texarea::placeholder{
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 12px;
@@ -891,9 +922,23 @@ border-radius: 4px;
 
 }
 
-.contact-form-checkbox{
-    margin-bottom: 40px;
 
+.contact-form-checkbox:checked + .contact-form-checkbox-desc::before{
+    background-color: #2196F3;
+    border-color: #2196F3;
+    background-image: url(/images/icons/check2.svg);
+}
+
+.contact-form-checkbox-desc::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid ;
+    border-radius: 2px;
+    margin-right: 8px;
+    border-color: #212121;
+    transition: background-color var(--transition-time) var(--transition), border-color var(--transition-time) var(--transition), background-image var(--transition-time) var(--transition);
 }
 
 .contact-form-checkbox-desc{
@@ -905,11 +950,11 @@ border-radius: 4px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     
+ 
 }
 
 .contact-form-checkbox-desc-link{
-    text-decoration: none;
-    color: var(--accent-color);
+   color: var(--accent-color);
 
 }
 
@@ -929,6 +974,7 @@ border-radius: 4px;
     cursor: pointer; 
     display: block;  
     margin: 0 auto;
+    margin-top: 40px;
     
 }
 

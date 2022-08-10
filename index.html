@@ -429,6 +429,12 @@
           </ul>
 
         </div>
+
+        <div class="wrapper-social-links">
+          <h2 class="footer-title">Підпишіться на розсилку</h2>
+
+          
+        </div>
         
       </div>
       
@@ -446,23 +452,41 @@
           
           <label class="modal-form-field">
             <span class="modal-form-label">Ім'я</span>
-            <input type="text" class="contact-form-input" name="user_name" required pattern="[a-zA-Zа-яА-Я]+" minlenght="2">
+            <span class="modal-form-input-wrapper">
+              <input type="text" class="contact-form-input" name="user_name" required pattern="[a-zA-Zа-яА-Я]+" minlenght="2">
+              <svg class="contact-form-icon" width="12" height="12">
+                <use href="./images/icons/sprite_.svg#icon-person-black"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-label">Телефон</span>
-            <input type="tel" class="contact-form-input" name="user_phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+            <span class="modal-form-input-wrapper">
+              <input type="tel" class="contact-form-input" name="user_phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx">
+                <svg class="contact-form-icon" width="13" height="13">
+                  <use href="./images/icons/sprite_.svg#icon-phone-black"></use>
+                </svg>
+            </span>
+            
           </label>
           <label class="modal-form-field">
             <span class="modal-form-label">Пошта</span>
-            <input type="email" class="contact-form-input" name="user_mail" required>
+            <span class="modal-form-input-wrapper">
+              <input type="email" class="contact-form-input" name="user_mail" required>
+              <svg class="contact-form-icon" width="15" height="12">
+                <use href="./images/icons/sprite_.svg#icon-mailblack"></use>
+              </svg>
+            </span>
+            
           </label>
           <label class="modal-form-field">
             <span class="modal-form-label">Коментар</span>
             <textarea class="contact-form-texarea" name="user_comment" placeholder="Введіть текст"></textarea>
           </label>
 
-          <input id="user-policy" type="checkbox" class="contact-form-checkbox" name="checkbox" required>
-          <label for="user-policy" class="contact-form-checkbox-desc">Погоджуюся з розсилкою та приймаю <a href=""> <span class="contact-form-checkbox-desc-link">Умови договору</span></a>
+          <input id="user-policy" type="checkbox" class="contact-form-checkbox visually-hidden" name="user_policy" required>
+          <label for="user-policy" class="contact-form-checkbox-desc">Погоджуюся з розсилкою та приймаю <a href="" class="contact-form-checkbox-desc-link"> Умови договору</a>
           </label>
           
           
