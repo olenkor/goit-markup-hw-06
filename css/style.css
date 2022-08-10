@@ -729,6 +729,67 @@ border-radius: 4px;
     fill: var(--light-text-color);
 }
 
+.wrapper-sign-up{
+    margin-left: 93px;
+
+
+}
+
+.sign-form-input{
+    width: 358px;
+    height: 50px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 16px;
+    color: var(--light-text-color);
+
+}
+
+.sign-form-btn{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sign-form-button-icon{
+    fill: #FFFFFF;
+    margin-left: 10px;
+}
+
+.wrapper-sign-button{
+    display: flex;
+}
+
+.sign-form-input::placeholder{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
 /* Modal window */
 
 .backdrop{
@@ -918,8 +979,6 @@ border-radius: 4px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 
-
-
 }
 
 
@@ -927,6 +986,10 @@ border-radius: 4px;
     background-color: #2196F3;
     border-color: #2196F3;
     background-image: url(/images/icons/check2.svg);
+}
+
+.contact-form-checkbox:focus + .contact-form-checkbox-desc::before {
+    outline: 2px solid var(--accent-color);
 }
 
 .contact-form-checkbox-desc::before{
