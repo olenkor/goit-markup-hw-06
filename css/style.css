@@ -985,7 +985,7 @@ border-radius: 4px;
 .contact-form-checkbox:checked + .contact-form-checkbox-desc::before{
     background-color: #2196F3;
     border-color: #2196F3;
-    background-image: url(./images/icons/check2.svg);
+    background-image: url(../images/icons/check2.svg);
 }
 
 .contact-form-checkbox:focus + .contact-form-checkbox-desc::before {
