@@ -900,10 +900,15 @@ border-radius: 4px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     text-align: center;
   
 
+}
+
+.modal-form-field{
+    margin-bottom: 10px;
+    display: block;
 }
 
 .modal-form-label{
@@ -923,7 +928,6 @@ border-radius: 4px;
     width: 100%;
     height: 40px;
     padding-left: 42px;
-    margin-bottom: 28px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-time) var(--transition);
@@ -944,7 +948,7 @@ border-radius: 4px;
 .contact-form-icon{
     position: absolute;
     display: block;
-    top: 20%;
+    top: 50%;
     left: 12px;
     transition: fill var(--transition-time) var(--transition);
     
@@ -954,16 +958,21 @@ border-radius: 4px;
 }
 
 .contact-form-texarea{
+    display: block;
     width: 100%;
     height: 120px;
     padding: 12px 16px;
-    margin-bottom: 20px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-time) var(--transition);
   
 
+}
+
+.modal-form-field-texarea{
+    display: block;
+    margin-bottom: 20px;
 }
 
 .contact-form-texarea:focus{
@@ -1012,6 +1021,9 @@ border-radius: 4px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
  
 }
@@ -1023,6 +1035,7 @@ border-radius: 4px;
 
 .contact-form-btn{
     min-width: 200px;
+    height: 50px;
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 16px;
@@ -1032,12 +1045,12 @@ border-radius: 4px;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px 52px;
+    padding: 10px 50px;
     border-color:var(--accent-color) ;
     cursor: pointer; 
     display: block;  
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 30px;
     cursor: pointer;
     
 }
